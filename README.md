@@ -15,8 +15,8 @@ Upon opening the page without edits, you should see something that looks like th
 * A procedural texture -- of your choice.
 * Adding these texture will require modification of both the javascript host code as well as the GLSL shaders in assn8-textures. html.
 * There are several ways that you can approach this: The first is to create new fragment shaders for the additional textures to be shown or the better approach would be to use the current fragment shader and add a new uniform variable that indicates with texture should be applied.
-* Modifications to the host avascript code include:
-   In the file textureMain.is
-** Changes need to be made to the function setUpTextures () to include your new image texture... Note that the function is already set up to load the globe texture.
-** In the function drawCurrent Shape () , you'll need to send values for whatever new uniforms that you define in your fragment shaders.
-** In the function initProgram (), you will need to add references to new uniform variables that you define in your fragment shaders.
+
+Modifications to the host avascript code include: In the file textureMain.js:-
+* Changes need to be made to the function setUpTextures () to include your new image texture... Note that the function is already set up to load the globe texture.
+* In the function drawCurrent Shape () , you'll need to send values for whatever new uniforms that you define in your fragment shaders.
+* In the function initProgram (), you will need to add references to new uniform variables that you define in your fragment shaders.
